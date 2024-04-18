@@ -1,5 +1,5 @@
 {% set name = "pylance" %}
-{% set version = "0.10.13" %}
+{% set version = "0.10.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lancedb/lance/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ac259185aa6eb237e69377f1cd47ea1eb2470a8813c6c1cc635bc50e3d0e0221
+  sha256: 93c5a24036ce810673898f054058dc8db36b87a0144dc71e5417b6ae79a71976
 
 build:
   number: 0
@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
     - libprotobuf
