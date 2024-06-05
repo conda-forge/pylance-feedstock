@@ -1,5 +1,5 @@
 {% set name = "pylance" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lancedb/lance/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c7807034ca3c45df27bc227ff55ef44271a4bee09e4a8fb19860bdb583056999
+  sha256: 51d368a60b5d204642e53e8840244cfc22664f42a0a153f6eb2bd82b304495cb
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<39]
 
 requirements:
