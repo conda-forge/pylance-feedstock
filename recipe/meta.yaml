@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
     - libprotobuf
+    - zlib  # [build_platform != target_platform aand target_platform == "linux-ppc64le"]
   host:
     - python
     - pip
