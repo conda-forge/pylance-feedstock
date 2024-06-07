@@ -23,11 +23,11 @@ requirements:
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
     - libprotobuf
-    - zlib  # [build_platform != target_platform and target_platform == "linux-ppc64le"]
   host:
     - python
     - pip
     - maturin
+    - zlib  # [build_platform != target_platform and target_platform == "linux-ppc64le"]
   run:
     - python
     - numpy >=1.22
