@@ -10,7 +10,7 @@ source:
   sha256: 2a8e2906ad6ce74dba9bfe91a3423806c6a1aa08611604b2a1301724ff9ba70b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - python
     - pip
     - maturin
+    - zlib  # [build_platform != target_platform and target_platform == "linux-ppc64le"]
   run:
     - python
     - numpy >=1.22
