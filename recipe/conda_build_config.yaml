@@ -1,2 +1,10 @@
-c_stdlib_version:              # [osx]
-  - 10.12                      # [osx]
+channel_sources:
+  - conda-forge/label/rust_dev,conda-forge
+channel_targets:
+  - conda-forge main
+rust_compiler_version:
+  - 1.78.0
+c_stdlib_version:          # [linux]
+  - "2.17"                 # [linux]
+c_stdlib_version:          # [osx]
+  - 10.12                  # [osx]
