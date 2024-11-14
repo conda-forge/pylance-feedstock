@@ -30,7 +30,3 @@ rust_compiler_version:
 - 1.83.0
 target_platform:
 - osx-arm64
-
-CONDA_BUILD_SYSROOT:
-- /opt/dev/ghq/github.com/yhori991/pylance-feedstock/SDKs/MacOSX11.0.sdk
-
