@@ -1,7 +1,5 @@
 c_compiler:
-- clang
-c_compiler_version:
-- '18'
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -20,7 +18,5 @@ python:
 - 3.13.* *_cp313
 rust_compiler:
 - rust
-rust_compiler_version:
-- 1.87.0
 target_platform:
 - win-64

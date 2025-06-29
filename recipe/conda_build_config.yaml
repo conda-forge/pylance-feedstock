@@ -2,15 +2,3 @@ channel_sources:
   - conda-forge/label/rust_dev,conda-forge
 channel_targets:
   - conda-forge main
-rust_compiler_version:
-  - 1.87.0
-c_compiler:
-  - clang
-c_compiler_version:
-  - 18
-cxx_compiler:
-  - clangxx
-cxx_compiler_version:
-  - 18
-c_stdlib_version:       # [osx]
-  - '10.15'             # [osx]
