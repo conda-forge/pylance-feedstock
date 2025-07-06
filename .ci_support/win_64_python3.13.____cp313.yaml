@@ -1,7 +1,5 @@
 c_compiler:
-- clang
-c_compiler_version:
-- '18'
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
