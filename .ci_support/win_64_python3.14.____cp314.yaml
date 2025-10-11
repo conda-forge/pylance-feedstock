@@ -3,7 +3,7 @@ c_compiler:
 c_stdlib:
 - vs
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge/label/rust_dev,conda-forge
 channel_targets:
 - conda-forge main
 libprotobuf:
@@ -22,6 +22,3 @@ rust_compiler_version:
 - 1.87.0
 target_platform:
 - win-64
-zip_keys:
-- - python
-  - channel_sources
