@@ -1,5 +1,5 @@
 {% set name = "pylance" %}
-{% set version = "1.0.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lancedb/lance/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0cf30e0d09c113daaeeff34eee3451e3da70ba0b28d2a7d93de6dd71e12c9340
+  sha256: 16f1724f8cb2ed0e90f609739a9b308e81ce978979f91e01c08428bee571a340
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - python
     - numpy >=1.22
     - pyarrow >=14
-    - lance-namespace >=0.2.1
+    - lance-namespace >=0.4.5
 
 test:
   imports:
