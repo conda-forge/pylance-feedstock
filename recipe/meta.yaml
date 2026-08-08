@@ -32,7 +32,7 @@ requirements:
     - python
     - numpy >=1.22
     - pyarrow >=14
-    - lance-namespace >=0.7.2,<0.8
+    - lance-namespace >=0.8.5,<0.9
 
 test:
   imports:
