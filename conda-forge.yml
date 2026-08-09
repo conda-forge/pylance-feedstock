@@ -1,5 +1,3 @@
-azure:
-  free_disk_space: true
 build_platform:
   linux_aarch64: linux_64
   osx_arm64: osx_64
@@ -14,6 +12,9 @@ workflow_settings:
   build_workspace_dir:
     - os: win
       value: C:\bld
+  free_disk_space:
+    - provider: azure
+      value: quick
   tools_install_dir:
     - os: win
       value: C:\Miniforge
